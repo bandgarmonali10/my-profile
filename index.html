@@ -15,6 +15,27 @@
         color: cadetblue;
         font-style: italic;
       }
+      #listSummary li{
+        list-style-type: square;
+      }
+      .roles{
+        list-style-type: lower-alpha;
+        padding: 5px;
+      }
+      .roles li{
+        padding-top: 1rem;
+
+      }
+      #projectDesc::selection{
+        background-color: rgb(224, 151, 15);
+    }
+    #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+        padding-left: 10px;
+      }
     
     </style>
   
@@ -56,9 +77,9 @@
     <!-- HOME Section -->
     <section id="home">
         <h2 class="heading">Professional Summary</h2>
-        <ul>
-          <li style="color: cadetblue;">Having 1 years of experience in developing single page Web Applications using Angular 8,HTML5,CSS3,Bootstrap 5,JavaScript,TypeScript</li>
-          <li>Experience on working with version control system - GIT and GitHub</li>
+        <ul id="listSummary">
+          <li style="color: cadetblue;"> <span>Having 1 years of experience in developing single page Web Applications using Angular 8,HTML5,CSS3,Bootstrap 5,JavaScript,TypeScript</span></li>
+          <li><span>Experience on working with version control system - GIT and GitHub</span></li>
           <li>Experience working with JIRA for user stories and bug tracking</li>
           <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
           <li>Working exposure on ID's like VS Code and Notepad++</li>
@@ -113,10 +134,10 @@
     <p><strong>India:<u>Student Management</u></strong></p>
     <p><strong><u>Environment:</u></strong> Angular,React,Java,JavaScript,HTML,CSS,Bootstrap,Github,Agile and JIRA</p>
     <p><strong>Team Size</strong>:6 &nbsp;&nbsp;&nbsp; <strong>Duration:</strong>2021-1st-July till <i>present</i></p>
-    <p><strong>Project Description:</strong>This project is mainly used for student management in colleges,where it helps to manage student record like <br>student registration,student update,and to see all the list of academic activities like score card and attendance </p><hr>
+    <p id="projrctDesc"><strong>Project Description:</strong>This project is mainly used for student management in colleges,where it helps to manage student record like <br>student registration,student update,and to see all the list of academic activities like score card and attendance </p><hr>
 
     <h2>Roles and Responsibilities</h2>
-    <ul>
+    <ol class="roles">
         <li>Designed and implemented the user interface using HTML5 and CSS3 </li>
         <li>Work closely with backend developers foe code integration</li>
         <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -125,7 +146,7 @@
         <li>Implemented project using Agile SCRUM methodology,involved in daily stand up calls,sprint retrospective meetings </li>
         <li>involved in fixing technical issues in production environment</li>
         
-    </ul>
+    </ol>
 
 
 
