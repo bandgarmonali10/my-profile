@@ -4,41 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-
-    
-   <style>
-      #resume{
-        color: orange;
-        font-weight: bolder;
-      }
-      .heading{
-        color: cadetblue;
-        font-style: italic;
-      }
-      #listSummary li{
-        list-style-type: square;
-      }
-      .roles{
-        list-style-type: lower-alpha;
-        padding: 5px;
-      }
-      .roles li{
-        padding-top: 1rem;
-
-      }
-      #projectDesc::selection{
-        background-color: rgb(224, 151, 15);
-    }
-    #listSummary li{
-        list-style-type: none;
-      }
-      #listSummary li::marker{
-        content: "✍️";
-        padding-left: 10px;
-      }
-    
-    </style>
-  
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
       </head>
       <body>
         <!-- Header section -->
@@ -63,17 +30,20 @@
         </header>
     
         <!-- Navigation Section -->
-        <nav>
-            <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#techStack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#project">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#education">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#personalDetails">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="#others">OTHERS</a>
+        <nav id="navSection">
+          <ul>
+            <li><a href="#home">HOME</a> </li>
+            <li><a href="#techStack">TECH STACK</a> </li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#techStack">TECH STACK</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+            <li> <a href="others.html" target="_blank">OTHERS</a></li>
+          </ul>
         </nav>
     
         <!-- Main Section -->
-        <section>
+        <section id="container">
     <!-- HOME Section -->
     <section id="home">
         <h2 class="heading">Professional Summary</h2>
